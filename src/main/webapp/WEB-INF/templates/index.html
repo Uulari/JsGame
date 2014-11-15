@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title> Learn JavaScript!</title>
+    </head>
+    <body>
+        <h1>Do you want to play a game?</h1>
+        <p>This is a game where Java-programmers can learn the basics of JavaScript.</p>
+
+        <form method="POST" th:action="@{/game}">
+            <div th:each="question : ${questions}">
+                <p th:text="${question}"></p>
+                <input type="text" name="answer"/>
+            </div>
+            <input type="submit" value="Submit answers"/>
+        </form>
+
+    </body>
+
+
+</html>
+
