@@ -14,9 +14,9 @@ public class GameController {
     public String view(Model model){
         
         model.addAttribute("greeting", "Do you want to play a game?");
-        //add here the returning of the game instance (?) and the view
+        //add here the returning of the game instance (?)
       
-        return "lol";
+        return "index";
     }
     
     
